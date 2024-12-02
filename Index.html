@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --primary-color: #1e3d59;
+      --accent-color: #ff6e40;
+      --secondary-color: #17c3b2;
+      --bg-light: #fafafa;
+      --text-dark: #2d2d2d;
+      --text-light: #fff;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--text-light);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .name {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section {
+      background: white;
+      margin: 2rem 0;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-title {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .experience-item {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: var(--bg-light);
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .company {
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .date {
+      color: var(--accent-color);
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+
+    .role {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-category {
+      background: var(--bg-light);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .skill-title {
+      color: var(--accent-color);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .language-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .flag {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    ul li::before {
+      content: "•";
+      color: var(--accent-color);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .objectives {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: var(--text-light);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .lang-label {
+      font-size: 0.9rem;
+      background: var(--primary-color);
+      color: white;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="name">SIDI MOHAMED LOUNIRI</div>
+      <div class="contact-info">
+        <div class="contact-item">📍 17 Rue de la Glacière, 67400 Illkirch-Graffenstaden</div>
+        <div class="contact-item">📱 +33 7 84 54 72 95</div>
+        <div class="contact-item">📧 omisirinoul@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">PROFIL PROFESSIONNEL | BERUFSPROFIL</h2>
+      <div class="grid">
+        <div>
+          <span class="lang-label">FR</span>
+          "Expert passionné alliant service haut de gamme et expertise technique, je m'épanouis dans les défis multiculturels où je peux mettre à profit ma double compétence en restauration et informatique."
+        </div>
+        <div>
+          <span class="lang-label">DE</span>
+          "Leidenschaftlicher Experte, der erstklassigen Service und technisches Know-how verbindet, gedeihe ich in multikulturellen Herausforderungen, wo ich meine Doppelkompetenz in Gastronomie und Informatik einsetzen kann."
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">EXPÉRIENCE PROFESSIONNELLE | BERUFSERFAHRUNG</h2>
+      <div class="experience-item">
+        <div class="company">🏛️ PARLEMENT EUROPÉEN | EUROPÄISCHES PARLAMENT</div>
+        <div class="date">2024 - Présent | Gegenwärtig</div>
+        <div class="grid">
+          <div>
+            <span class="lang-label">FR</span>
+            <div class="role">Serveur / Barman - Sessions Parlementaires</div>
+            <ul>
+              <li>Service VIP lors des sessions parlementaires</li>
+              <li>Gestion du service en environnement protocolaire</li>
+              <li>Interaction avec clientèle internationale</li>
+            </ul>
+          </div>
+          <div>
+            <span class="lang-label">DE</span>
+            <div class="role">Kellner / Barkeeper - Parlamentssitzungen</div>
+            <ul>
+              <li>VIP-Service während der Parlamentssitzungen</li>
+              <li>Service-Management in protokollarischer Umgebung</li>
+              <li>Umgang mit internationaler Kundschaft</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="company">🥖 BOULANGERIE GANTZER | BÄCKEREI GANTZER</div>
+        <div class="date">2023 (7 mois)</div>
+        <div class="grid">
+          <div>
+            <span class="lang-label">FR</span>
+            <div class="role">Vendeur</div>
+            <ul>
+              <li>Gestion des ventes et de la caisse</li>
+              <li>Conseil client et présentation des produits</li>
+              <li>Service clientèle</li>
+            </ul>
+          </div>
+          <div>
+            <span class="lang-label">DE</span>
+            <div class="role">Verkäufer</div>
+            <ul>
+              <li>Verkaufs- und Kassenmanagement</li>
+              <li>Kundenberatung und Warenpräsentation</li>
+              <li>Kundenservice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="company">🏰 MAISON KAMMERZELL</div>
+        <div class="date">2021-2022</div>
+        <div class="grid">
+          <div>
+            <span class="lang-label">FR</span>
+            <div class="role">Serveur / Barman / Caviste</div>
+            <ul>
+              <li>Service gastronomique haut de gamme</li>
+              <li>Bar & Œnologie</li>
+              <li>Gestion événementielle</li>
+            </ul>
+          </div>
+          <div>
+            <span class="lang-label">DE</span>
+            <div class="role">Kellner / Barkeeper / Weinhändler</div>
+            <ul>
+              <li>Gehobener Service</li>
+              <li>Bar & Weinkunde</li>
+              <li>Veranstaltungsmanagement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="company">💻 6NEXT - MAROC</div>
+        <div class="date">2018-2020</div>
+        <div class="grid">
+          <div>
+            <span class="lang-label">FR</span>
+            <div class="role">Technicien Réseau</div>
+            <ul>
+              <li>Support technique niveau 2/3</li>
+              <li>Administration réseau</li>
+              <li>Formation utilisateurs</li>
+            </ul>
+          </div>
+          <div>
+            <span class="lang-label">DE</span>
+            <div class="role">Netzwerktechniker</div>
+            <ul>
+              <li>Technischer Support Level 2/3</li>
+              <li>Netzwerkadministration</li>
+              <li>Benutzerschulung</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">COMPÉTENCES | KOMPETENZEN</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-title">Langues | Sprachen</div>
+          <div class="language-item">
+            <span class="flag">🇫🇷</span>
+            Français - Courant
+          </div>
+          <div class="language-item">
+            <span class="flag">🇬🇧</span>
+            Anglais - Courant
+          </div>
+          <div class="language-item">
+            <span class="flag">🇲🇦</span>
+            Arabe - Langue maternelle
+          </div>
+          <div class="language-item">
+            <span class="flag">🇩🇪</span>
+            Allemand - A1+
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-title">Restauration | Gastronomie</div>
+          <ul>
+            <li>Service gastronomique et protocole</li>
+            <li>Service VIP et diplomatique</li>
+            <li>Œnologie et conseil en vins</li>
+            <li>Organisation événementielle</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-title">Informatique | Informatik</div>
+          <ul>
+            <li>Support technique avancé</li>
+            <li>Administration réseau</li>
+            <li>Développement web</li>
+            <li>Maintenance système</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="objectives">
+      <h2 class="section-title" style="color: white; border-color: white;">OBJECTIFS | ZIELE</h2>
+      <div class="grid">
+        <div>
+          <span class="lang-label">FR</span>
+          Développer mes compétences en restauration haut de gamme, progresser en allemand, évoluer dans un environnement international.
+        </div>
+        <div>
+          <span class="lang-label">DE</span>
+          Weiterentwicklung in der gehobenen Gastronomie, Verbesserung der Deutschkenntnisse, Entwicklung in internationalem Umfeld.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
